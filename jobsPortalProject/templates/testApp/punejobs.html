@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pune Jobs Vacancies</title>
+        <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <h1>Pune Jobs Vaccancies</h1>
+        
+        <hr>
+        {% if jobs_list %}
+        <table id='tab'>
+            <thead>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Eligibility</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </thead>
+            {% for job in jobs_list %}
+            <tr>
+                <td>{{jobs.date}}</td>
+                <td>{{jobs.company}}</td>
+                <td>{{jobs.}}</td>
+                <td>{{jobs.title}}</td>
+                <td>{{jobs.eligibility}}</td>
+                <td>{{jobs.address}}</td>
+                <td>{{jobs.email}}</td>
+                <td>{{jobs.phoneNumber}}</td>
+            </tr>
+            {% endfor %}    
+        </table>
+        {% else %}
+        <p>No Jobs Found</p>
+        {% endif %}
+    </body>
+</html>
+
+
+
+
+

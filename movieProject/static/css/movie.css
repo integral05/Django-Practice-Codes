@@ -1,0 +1,17 @@
+body{
+    background: 
+    url("https://images.unsplash.com/photo-1512149074996-e923ac45be6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.container .jumbotron{
+    margin-top: 250px;
+    background: rgba(255,255,255,.3);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-family: 'Merriweather', serif;
+
+}
+
+

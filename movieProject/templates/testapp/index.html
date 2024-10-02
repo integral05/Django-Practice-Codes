@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intehral Movies</title>
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="{% static 'css/movie.css' %}">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+   
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="jumbotron text-center p-2">
+            <h1>INTEGRAL Movies...</h1>
+            <p>Up-to-date movies information</p>
+            
+            <a class="btn btn-primary btn-lg" href="/addmovie" role="button">Add Movie</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-primary btn-lg" href="/listmovies" role="button">List Movies</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -22,7 +22,7 @@ def results_view(request):
     gfname=request.GET['gfname']
     name = request.COOKIES.get('name')
     age = request.COOKIES.get('age')
-    response = render(request,"testapp/results.html",{'name':name,'age':age,'gfname':gfname})
+    response = render(request,"testapp/results.html",{'user_name':name,'user_age':age,'user_gfname':gfname})
 
     return response
 

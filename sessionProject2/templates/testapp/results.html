@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+</head>
+<body>
+    <h1>Thanks For Providing Information... plz Confirm Once</h1><hr>
+    <ul>
+        {% for key,value in request.session.items %}
+          <li><h2>{{key|upper}}:{{value|title}}</h2></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

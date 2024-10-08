@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Girlfriend Page</title>
+</head>
+<body>
+    <h1>Girlfriend Name</h1>
+    <form action="/results" >
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Submit Girlfriend Name">
+    </form>
+</body>
+</html>
